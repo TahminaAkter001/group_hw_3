@@ -1,0 +1,673 @@
+@font-face {
+    font-family: 'Brushwell';
+    src: url(../fonts/Brushwell-4BBJD.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family:'NEXT ART';
+    src: url(../fonts/NEXT\ ART_Light.otf);
+    
+  }
+  @font-face {
+    font-family: 'Louis George Café';
+    src: url(../fonts/Louis\ George\ Cafe\ Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Red Velvet';
+    src: url(../fonts/RedVelvet-Regular.otf);
+  }
+      
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***********portfolio********/
+.portfolio{
+    background-image: url('../image/flower-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.portfolio .container{
+    text-align: center;
+    padding-top: 50px;
+}
+.portfolio .container h2{
+    font-family: 'Red Velvet';
+    font-size: 67px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.portfolio .container h2::after{
+    content: '';
+    height: 2px;
+    width: 700px;
+    display: block;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+.portfolio .container p{
+    font-family: 'Red Velvet';
+    font-size: 29px;
+    color: #373737;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.portfolio .container a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Louis George Café';
+    font-weight: 400;
+    font-size: 19px;
+    color: black;
+    border: 1px solid black;
+    height: 51px;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 52px;
+    margin: auto;
+    margin-top: 60px;
+}
+/**********About me**********/
+.about_me .container{
+    width: 58%;
+    padding: 70px 0;
+}
+.about_me .container img{
+    padding: 30px 0;
+}
+.about_me .col-lg-8.content {
+    border-left: 1px solid #000;
+    padding-left: 30px;
+}
+.portfolio .container h1,
+.about_me .content h1{
+    font-family: 'Brushwell';
+    font-size: 76px;
+    color: black;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.about_me .content p{
+    font-family: 'Louis George Café';
+    font-weight: 300;
+    font-size: 19px;
+    color: black;
+    line-height: 35px;
+    width: 600px;
+}
+.about_me .content a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Louis George Café';
+    font-weight: 400;
+    font-size: 19px;
+    color: black;
+    border: 1px solid black;
+    height: 51px;
+    width: 275px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 52px;
+    margin-top: 26px;
+}
+
+/*************testimonials******/
+
+.testimonials .top::before{
+    content: ' ';
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin: 40px auto;
+}
+.testimonials .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:6rem;
+    grid-auto-rows: minmax(450px,auto);
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+  .testimonials .child{
+    padding: 0.4rem;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+  }
+  .testimonials .child:hover{
+    box-shadow: 8px 8px 47px #888;
+    transition: transform .3s ease;
+    background-color: rgb(163, 157, 157);
+    color: #fff;
+  }
+  
+  .testimonials .child img{
+      margin: -120px auto 0 0;
+  }
+  .testimonials .child h5{
+    font-family: 'Red Velvet';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 19px;
+    margin: 20px 0;
+  }
+  .testimonials .child p{
+    font-family: 'Louis George Café';
+    font-weight: 400;
+    font-size: 19px;
+    line-height:30px;
+    padding: 0 55px;
+  }
+  .testimonials a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Louis George Café';
+    font-weight: 400;
+    font-size: 19px;
+    color: black;
+    border: 1px solid black;
+    height:55px;
+    width: 230px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 56px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .portfolio .container a:hover,
+  .about_me .content a:hover,
+  .testimonials a:hover{
+      background-color: #888;
+      color: #fff;
+  }
+/*************contact me***********/
+
+
+.contact_me{
+    height: 830px;
+    width: 100%;
+    background-image: url('../image/contact_bg.jpg');
+}
+
+.testimonials .top h1,
+.contact_me .top h1{
+    font-family: 'Brushwell';
+    font-size: 66.67px;
+    color: black;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.testimonials .top h2,
+.contact_me .top h2{
+    font-size: 37.5px;
+    color: black;
+    font-weight: 300;
+}
+.testimonials .top,
+.contact_me .top{
+    text-align: center;
+}
+.contact_me .top::after{
+    content: ' ';
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin: 40px auto;
+}
+.contact_me .container{
+    width: 39%;
+}
+.contact_me .container .myform{
+        font-family:'Louis George Café' ;
+        font-weight: 700;
+        font-size: 18.75px;
+    
+}
+.contact_me .container form input{
+    background-color: unset;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+}
+.contact_me .container form .big-sub{
+    height: 150px;
+}
+.contact_me .container form label{
+    margin: 13px auto;
+}
+
+/***************footer***************/
+.footer{
+    background-image: url('../image/footer_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+}
+
+.footer .container{
+    width: 50%;
+}
+
+.footer .top-nav nav ul{
+    display: flex;
+    padding-top: 10%;
+}
+
+.footer .top-nav nav ul li:hover{
+    border-bottom: 1px solid #fff;
+}
+.footer .top-nav nav ul li{
+    border-bottom: 1px solid transparent;
+}
+
+.footer .top-nav nav ul li,
+.footer .social_sites nav ul li{
+    list-style-type: none;
+    padding:10px 20px;
+}
+
+.footer .top-nav nav ul li a,
+.footer .social_sites nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'NEXT ART';
+    font-size: 17.89px;
+}
+
+.footer .social_sites nav ul{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 26%;
+}
+.footer .social_sites nav ul i{
+    font-size: 25px;
+    opacity: 0.5;
+}
+.footer .social_sites nav ul i:hover{
+    opacity: 1;
+}
+.footer .container p{
+    font-family: 'Louis George Café';
+    font-size: 21px;
+    color: white;
+    font-weight: 700;
+    width: 80%;
+    padding-left: 20%;
+    text-align: center;
+    line-height: 30px;
+}
+.footer .container .bottom{
+    font-family: 'Louis George Café';
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/**********media quiry***********/
+@media(max-width:1600px){
+    .contact_me .container form .big-sub {
+        height: 103px;
+    }
+}
+@media(max-width:1441px){
+    /*********about me*****/
+    .about_me .container img {
+        padding: 42px 0px;
+        width: 98%;
+    }
+    
+    /********contact****/
+    .contact_me .container {
+        width: 52%;
+    }
+    /********footer************/
+    .footer .container {
+        width: 70%;
+    }
+    .footer .container p {
+        font-family: 'Louis George Café';
+        font-size: 19px;
+    }
+
+    /***************tesimonials******/
+    .testimonials .container{
+        width: 80%;
+    }
+    .testimonials .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5rem;
+        grid-auto-rows: minmax(450px,auto);
+        margin-top: 150px;
+        margin-bottom: 70px;
+    }
+    
+}
+@media(max-width:769px){
+    /*****about********/
+    .about_me .container img {
+        padding: 0px 0px 42px 52px;
+        width: 97%;
+    }
+    
+    .about_me .container{
+        width: 50%;
+    }
+    .about_me .content p {
+        font-family: 'Louis George Café';
+        font-weight: 300;
+        font-size: 19px;
+        color: black;
+        line-height: 35px;
+        width: 490px;
+    }
+    /**********portfolio*******/
+    .portfolio{
+        height: 500px;
+    }
+    .portfolio .container h1, .about_me .content h1 {
+        font-family: 'Brushwell';
+        font-size: 67px;
+        color: black;
+        font-weight: 400;
+        padding-top: 4px;
+    }
+    .portfolio .container h2 {
+        font-size: 50px;
+    }
+    .portfolio .container p {
+        font-family: 'Red Velvet';
+        font-size: 21px;
+    }
+    .portfolio .container a{
+        font-size: 16px;
+        width: 200px;
+        margin-top: 43px;
+    }
+    .portfolio .container h2::after{
+        content: '';
+        height: 2px;
+        width:600px;
+        display: block;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    /************testimonials*******/
+    .testimonials a {
+        margin-top: -95px;
+    }
+    .testimonials .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:6rem;
+        grid-auto-rows: minmax(350px,auto);
+        margin-top: 150px;
+        margin-bottom: 70px;
+      }
+      .about_me .content p,
+      .about_me .container a,
+      .testimonials .main p{
+          font-size: 16px;
+      }
+    .testimonials .container {
+        width: 65%;
+    }
+    .testimonials .child{
+        margin-bottom: 80px;
+    }
+    .testimonials .child:nth-child(1){
+    grid-column: 1/4;
+  }
+  .testimonials .child:nth-child(2){
+    grid-column: 1/4;
+  }
+  .testimonials .child:nth-child(3){
+    grid-column: 1/4;
+  }
+    /************contact me*****/
+    .contact_me .container .contact-img{
+        margin-top: 30px;
+    }
+    .contact_me .container .contact-img img{
+        width: 100%!important;
+    }
+    .contact_me {
+        height: 1400px;
+    }
+
+    /*************footer********/
+    .footer .top-nav nav ul li a,
+.footer .social_sites nav ul li a{
+    font-family: 'NEXT ART';
+    font-size: 14px;
+}
+.footer .top-nav nav ul li,
+.footer .social_sites nav ul li{
+    list-style-type: none;
+    padding:4px 13px;
+
+}
+.footer .container {
+    width: 90%;
+}
+.footer .container p {
+    font-family: 'Louis George Café';
+    font-size: 16px;
+}
+.footer .social_sites nav ul {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-left: 26%;
+}
+.footer .social_sites nav ul i{
+    font-size: 20px;
+    opacity: 0.5;
+}
+.footer .container .bottom {
+    font-family: 'Louis George Café';
+    font-size: 13px;
+}
+
+}
+
+@media(max-width:415px){
+    /*************testimonials************/
+    .testimonials .container {
+        width: 90%;
+    }
+    .testimonials .top h1, .contact_me .top h1 {
+        font-family: 'Brushwell';
+        font-size: 55px;
+        color: black;
+        font-weight: 400;
+        padding-top: 4px;
+    }
+    .testimonials .child p {
+        font-family: 'Louis George Café';
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
+        line-height: 30px;
+        padding: 0 46px;
+    }
+    .testimonials a {
+        font-weight: 400;
+        font-size: 16px;
+        height: 47px;
+        width: 195px;
+        line-height: 47px;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: -95px;
+    }
+    /*************contact**/
+    .contact_me .container {
+        width: 76%;
+    }
+    .contact_me {
+        height: 1334px;
+    }
+    .testimonials .top h1, .contact_me .top h1 {
+        font-family: 'Brushwell';
+        font-size: 55px;
+        color: black;
+        font-weight: 400;
+        padding-top: 18px;
+    }
+    /***************footer*****/
+    .footer .top-nav nav ul li, .footer .social_sites nav ul li {
+        list-style-type: none;
+        padding: 4px 6px;
+    }
+    .footer .top-nav nav ul li a,
+.footer .social_sites nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'NEXT ART';
+    font-size: 15px;
+}
+.footer .top-nav nav ul li a, .footer .social_sites nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'NEXT ART';
+    font-size: 9px;
+}
+.footer .container {
+    width: 100%;
+}
+.footer .social_sites nav ul {
+    display: flex;
+    padding-top: 0%; 
+    padding-bottom: 1%;
+    margin-left: 23%;
+}
+.footer ul{
+    padding-left: 1rem!important;
+}
+.footer .social_sites nav ul i{
+    font-size: 18px;
+    opacity: 0.5;
+}
+.footer .container p {
+    font-family: 'Louis George Café';
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+    padding-left: 10%;
+    width: 93%;
+
+}
+.footer .container .bottom{
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 11px;
+    }
+    .footer {
+        height: 318px;
+        width: 100%;
+    }
+}
+
+@media(max-width:376px){
+    /**********about**********/
+    .about_me .content p {
+        font-family: 'Louis George Café';
+        font-weight: 300;
+        font-size: 19px;
+        color: black;
+        line-height: 35px;
+        width: 300px;
+    }
+    .about_me .container {
+        width: 75%;
+    }
+    /**********testimonials**/
+    .portfolio .container h1, .about_me .content h1,
+    .testimonials .top h1, .contact_me .top h1 {
+        font-size: 45px;
+        color: black;
+    }
+    .portfolio .container h2 {
+        font-size: 30px;
+    }
+    .portfolio .container p {
+        font-family: 'Red Velvet';
+        font-size: 16px;
+    }
+    .portfolio .container h2::after{
+        content: '';
+        height: 2px;
+        width: 300px;
+        display: block;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .portfolio .container a{
+        font-size: 16px;
+        color: black;
+        height: 40px;
+        width: 160px;
+        line-height:36px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .portfolio {
+        height: 426px;
+    }
+    
+    .testimonials .top h2, .contact_me .top h2 {
+        font-size: 26.5px;
+        color: black;
+        font-weight: 300;
+    }
+    .testimonials .child h5 {
+        font-family: 'Red Velvet';
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .testimonials .child p {
+        font-family: 'Louis George Café';
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
+        line-height: 30px;
+        padding: 0 16px;
+    }
+    /*********contact**********/
+    .contact_me {
+        height: 1240px;
+    }
+    .contact_me .container .myform {
+        font-family: 'Louis George Café';
+        font-weight: 700;
+        font-size: 14.75px;
+    }
+    .footer ul{
+        padding-left: 0.3rem!important;
+    }
+    .footer .container{
+        padding: 0rem!important;
+    }
+}
