@@ -325,6 +325,9 @@
     .contact_me .container form .big-sub {
         height: 103px;
     }
+    .about_me .container img {
+        width:96% ;
+    }
 }
 @media(max-width:1441px){
     /*********about me*****/
@@ -491,6 +494,51 @@
 }
 
 @media(max-width:415px){
+    .about_me .content p {
+        font-family: 'Louis George Café';
+        font-weight: 300;
+        font-size: 19px;
+        color: black;
+        line-height: 35px;
+        width: 300px;
+    }
+    .about_me .container {
+        width: 75%;
+    }
+    /**********portfolio*********/
+    .portfolio .container h1, .about_me .content h1,
+    .testimonials .top h1, .contact_me .top h1 {
+        font-size: 45px;
+        color: black;
+    }
+    .portfolio .container h2 {
+        font-size: 30px;
+    }
+    .portfolio .container p {
+        font-family: 'Red Velvet';
+        font-size: 16px;
+    }
+    .portfolio .container h2::after{
+        content: '';
+        height: 2px;
+        width: 300px;
+        display: block;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .portfolio .container a{
+        font-size: 16px;
+        color: black;
+        height: 40px;
+        width: 160px;
+        line-height:36px;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .portfolio {
+        height: 426px;
+    }
     /*************testimonials************/
     .testimonials .container {
         width: 90%;
@@ -586,6 +634,7 @@
         height: 318px;
         width: 100%;
     }
+
 }
 
 @media(max-width:376px){
